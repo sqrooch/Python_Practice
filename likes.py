@@ -15,6 +15,7 @@ It must return the display text as shown in the examples:
 
 # My decision.
 def likes(names):
+    """Accepts a list of likers and returns their compact notation."""
     counter = int(len(names))
     if counter > 3:
         return f"{names[0]}, {names[1]} and {counter - 2} others like this"
