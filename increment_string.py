@@ -14,7 +14,7 @@ Attention: If the number has leading zeros the amount of digits should be consid
 """
 
 
-# My decision:
+# My solution:
 # def increment_string(strng):
 #     """Increases the number at the end of a string by one."""
 #     if strng == "" or not strng[-1].isdigit():
@@ -32,12 +32,13 @@ Attention: If the number has leading zeros the amount of digits should be consid
 #     return strng + (original_str_length - 1 - len(strng + tail_of_nums)) * "0" + tail_of_nums
 
 
-# Best decision:
+# Best solution:
 def increment_string(strng):
     """Increases the number at the end of a string by one."""
     head = strng.rstrip('0123456789')
     tail = strng[len(head):]
-    if tail == "": return strng + "1"
+    if tail == "":
+        return strng + "1"
     return head + str(int(tail) + 1).zfill(len(tail))
 
 

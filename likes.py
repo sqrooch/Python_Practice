@@ -13,7 +13,7 @@ It must return the display text as shown in the examples:
 """
 
 
-# My decision:
+# My solution:
 # def likes(names):
 #     """Accepts a list of likers and returns their compact notation."""
 #     counter = int(len(names))
@@ -29,7 +29,7 @@ It must return the display text as shown in the examples:
 #         return "no one likes this"
 
 
-# Best decision:
+# Best solution:
 def likes(names):
     """Accepts a list of likers and returns their compact notation."""
     n = len(names)
